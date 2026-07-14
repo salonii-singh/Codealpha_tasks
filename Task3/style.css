@@ -70,7 +70,12 @@ Download Resume
 <div class="hero-img">
 
 <img src="profile.jpg" alt="Profile">
-
+.profile-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 </div>
 
 </section>
