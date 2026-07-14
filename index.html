@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Responsive Image Gallery</h1>
+
+<div class="gallery">
+    <img src="img1.jpg" onclick="openLightbox(0)">
+    <img src="img2.jpg" onclick="openLightbox(1)">
+    <img src="img3.jpg" onclick="openLightbox(2)">
+    <img src="img4.jpg" onclick="openLightbox(3)">
+    <img src="img5.jpg" onclick="openLightbox(4)">
+    <img src="img6.jpg" onclick="openLightbox(5)">
+</div>
+
+<div id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <img id="lightbox-img">
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
